@@ -1,4 +1,4 @@
 function sum(m, n) {
-  var sum = m + n;
+  let sum = m + n;
   return sum;
 }

@@ -8,9 +8,14 @@ function print(text) {
 /**
  * Эту функцию нужно поменять так,
  * чтобы функция sayHello работала корректно
+ * @param {string | null} name
+ * @returns {boolean}
  */
 function isValid(name) {
-  // ваш код...
+  if (!name || name.length < 4 || name.indexOf(' ') >= 0) {
+    return false;
+  }
+  return true
 }
 
 function sayHello() {
