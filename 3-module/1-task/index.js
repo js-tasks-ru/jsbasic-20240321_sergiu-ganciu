@@ -1,3 +1,8 @@
+/**
+ * Get users' names
+ * @param {object} users
+ * @returns {object}
+ */
 function namify(users) {
-  // ваш код...
+  return users.map(user => user.name);
 }
